@@ -1,7 +1,7 @@
 [Unit]
 Description=Accton AS7726-32X Platform Monitoring service
 Before=pmon.service
-#After=pddf-platform-init.service
+After=pddf-platform-init.service
 DefaultDependencies=no
 
 [Service]
