@@ -31,6 +31,7 @@ import sys
 import logging
 import re
 import time
+import os
 
 PROJECT_NAME = 'as7726_32x'
 version = '0.0.1'
@@ -291,7 +292,7 @@ def device_uninstall():
     if status==0:
         I2C_ORDER=1
     else:
-    	I2C_ORDER=0
+        I2C_ORDER=0
 
     for i in range(0,len(sfp_map)):
         target = "/sys/bus/i2c/devices/i2c-"+str(sfp_map[i])+"/delete_device"
