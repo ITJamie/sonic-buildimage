@@ -1,7 +1,7 @@
 [Unit]
 Description=Accton AS7726-32X Platform Monitoring service
 Before=pmon.service
-After=as7726-32x-platform-handle_mac.service
+#After=as7726-32x-platform-handle_mac.service
 DefaultDependencies=no
 
 [Service]
