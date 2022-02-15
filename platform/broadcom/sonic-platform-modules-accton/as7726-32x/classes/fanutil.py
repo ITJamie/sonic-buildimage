@@ -82,7 +82,7 @@ class FanUtil(object):
            (FAN_NUM_6_IDX, FAN_NODE_FAULT_IDX_OF_MAP): 'fan6_fault',
            (FAN_NUM_6_IDX, FAN_NODE_DIR_IDX_OF_MAP): 'fan6_direction',
            }
-
+    
     def _get_fan_to_device_node(self, fan_num, node_num):
         return self._fan_to_device_node_mapping[(fan_num, node_num)]
 
